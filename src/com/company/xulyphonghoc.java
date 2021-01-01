@@ -23,15 +23,14 @@ public class xulyphonghoc {
                 String cs = sc.nextLine();
                 System.out.println("Nhập vị trí mới :");
                 String vitri = sc.nextLine();
-                System.out.println("nhập số kw mới");
-                int sokw = Integer.parseInt(sc.nextLine());
 
-                phonghocArrayList.set(i, new phonghoc(maphong, siso, cs, vitri,sokw));
+
+                phonghocArrayList.set(i, new phonghoc(maphong, siso, cs, vitri));
                 timkiem(phonghocArrayList, maphong);
             }
 
         }
-        if (kt == false) System.out.println("Không tìm thấy thông tin !");
+        if (kt == false) System.out.println("Không tìm thấy mã phòng muốn sửa !");
 
     }
 
@@ -44,7 +43,7 @@ public class xulyphonghoc {
                 phonghocArrayList.remove(i);
             }
         }
-        if (kt == false) System.out.println("Không tìm thấy .");
+        if (kt == false) System.out.println("Không tìm thấy mã phòng cần xóa ! .");
     }
 
     public void timkiem(ArrayList<phonghoc> phonghocArrayList, String keyword) {
@@ -58,7 +57,7 @@ public class xulyphonghoc {
                 kt = true;
             }
         }
-        if (kt == false) System.out.println("Không tìm thấy !");
+        if (kt == false) System.out.println("Không tìm thấy mã phòng cần tìm !");
     }
 
     public void sapxeptheosucchuatuLondenBe(ArrayList<phonghoc> phonghocArrayList) {
@@ -71,14 +70,6 @@ public class xulyphonghoc {
         });
     }
 
-    public static int tinhtien(int sokw) {
-        int tien = 0;
-
-
-            return tien = sokw * 1560;
-
-
-    }
 
 }
 

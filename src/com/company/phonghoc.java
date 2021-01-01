@@ -3,15 +3,15 @@ package com.company;
 public class phonghoc {
 
     private String maphong;
-    private int siso,sokw;
+    private int siso;
     private  String csvc;
     private String vitri;
-    public phonghoc(String maphong,int siso,String csvc,String vitri,int sokw){
+    public phonghoc(String maphong,int siso,String csvc,String vitri){
         this.maphong=maphong;
         this.siso=siso;
         this.csvc=csvc;
         this.vitri=vitri;
-        this.sokw =sokw;
+
     }
     public phonghoc(){
 
@@ -19,7 +19,7 @@ public class phonghoc {
 
     @Override
     public  String toString(){
-        return  maphong+"#"+siso+"#"+csvc+"#"+vitri+"#"+sokw+"\n";
+        return  maphong+"#"+siso+"#"+csvc+"#"+vitri+"\n";
     }
     public String getMaphong(){
         return maphong;
@@ -46,12 +46,6 @@ public class phonghoc {
         this.vitri=vitri;
     }
 
-    public int getSokw() {
-        return sokw;
-    }
 
-    public void setSokw(int sokw) {
-        this.sokw = sokw;
-    }
 }
 

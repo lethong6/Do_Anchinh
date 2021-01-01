@@ -22,7 +22,9 @@ public class xulyfile {
 //        String maphong,int siso,String csvc,String vitri,int sokw
         String line ="";
         while ((line = bufferedReader.readLine()) != null) {
-            phonghocArrayList.add(new phonghoc(line.split("#")[0],Integer.parseInt(line.split("#")[1]),line.split("#")[2],line.split("#")[3],Integer.parseInt(line.split("#")[4])));
+        phonghocArrayList.add(new phonghoc(line.split("#")[0],Integer.parseInt(line.split("#")[1]),
+                   line.split("#")[2],line.split("#")[3]));
+               //     Integer.parseInt(line.split("#")[4]),Integer.parseInt(line.split("#")[5])));
         }
 
     }

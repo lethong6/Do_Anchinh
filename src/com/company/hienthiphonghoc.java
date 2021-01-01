@@ -5,11 +5,14 @@ import java.util.ArrayList;
 public class hienthiphonghoc{
     public void hien(phonghoc phonghoc) {
 
-        System.out.printf("|%s|%s|%s|%s|%s|%s|\n", phonghoc.getMaphong(), phonghoc.getsiso(), phonghoc.getCsvc(), phonghoc.getVitri(),phonghoc.getSokw(),xulyphonghoc.tinhtien(phonghoc.getSokw()));
-
+        System.out.printf("|%10s|%10s|%20s|%10s|\n", phonghoc.getMaphong(), phonghoc.getsiso(), phonghoc.getCsvc(),
+                phonghoc.getVitri());
+        System.out.println("-------------------------------------------------------");
     }
     public void hienall(ArrayList<phonghoc> phonghocArrayList){
-        System.out.printf("|%s|%s|%s|%s|%s|%s|\n","mã phòng","sĩ số","cơ cở vật chất","vị trí","số kwh","Tiền điện");
+        System.out.println("-------------------------------------------------------");
+        System.out.printf("|%10s|%10s|%20s|%10s|\n","mã phòng","sức chứa","cơ cở vật chất","vị trí");
+        System.out.println("-------------------------------------------------------");
         for (phonghoc phonghoc:phonghocArrayList){
             hien(phonghoc);
         }
